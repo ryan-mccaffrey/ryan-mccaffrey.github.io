@@ -151,6 +151,15 @@ blockquote {
 	width: 100%;
 	z-index: 2;
 }
+.pic-row .profile-pic {
+	position:absolute;left:50%;
+	margin-left:-100px;
+	width:200px;
+	height:300px;
+	border:5px solid #fff;
+	border-radius:50%;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+}
 .subfooter {
 	background-color: #fafafa;
 	border-top: 1px solid #f3f3f3;
@@ -532,9 +541,9 @@ textarea {
 @media (max-width:991px) {
 	.fixed-header-on .logo,
 	.fixed-header-on .site-name,
-	.fixed-header-on .site-slogan {
+	/*.fixed-header-on .site-slogan {
 		display: none;
-	}
+	}*/
 }
 
 /* Blocks/Widgets
@@ -567,9 +576,9 @@ textarea {
 .site-name a:hover {
 	text-decoration: none;
 }
-.site-slogan {
+/*.site-slogan {
 	font-size: 12px;
-}
+}*/
 
 /* Testimonials
 ---------------------------------- */

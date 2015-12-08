@@ -28,6 +28,8 @@
         <!-- Plugins -->
         <link href="css/animations.css" rel="stylesheet">
 
+        <!--<link href="css/stylev3.min.css" rel="stylesheet">-->
+
         <!-- Worthy core CSS file -->
         <link href="css/style.css" rel="stylesheet">
 
@@ -59,7 +61,7 @@
                             <!-- name-and-slogan -->
                             <div class="site-name-and-slogan smooth-scroll">
                                 <div class="site-name"><a href="#banner">Ryan McCaffrey</a></div>
-                                <div class="site-slogan">A website about Greta by <a target="_blank" href="http://gretahuang.me">Ryan McCaffrey</a></div>
+                                <!--<div class="site-slogan">A website about Greta by <a target="_blank" href="http://gretahuang.me">Ryan McCaffrey</a></div> -->
                             </div>
 
                         </div>
@@ -94,12 +96,12 @@
                                         <!-- Collect the nav links, forms, and other content for toggling -->
                                         <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
                                             <ul class="nav navbar-nav navbar-right">
-                                                <li class="active"><a href="#banner">Home</a></li>
-                                                <li><a href="#about">I</a></li>
-                                                <li><a href="#services">Love</a></li>
-                                                <li><a href="#portfolio">Greta</a></li>
-                                                <li><a href="#clients">Yining</a></li>
-                                                <li><a href="#contact">Huang</a></li>
+                                                <li class="active"><a href="#banner">About</a></li>
+                                                <li><a href="#about">Projects</a></li>
+                                                <li><a href="#research">Experimental Research</a></li>
+                                                <li><a href="#resume">Resume</a></li>
+                                                <li><a href="#contact">Contact</a></li>
+                                                <!-- <li><a href="#contact">Huang</a></li> -->
                                             </ul>
                                         </div>
 
@@ -125,10 +127,16 @@
             <div class="banner-image"></div>
             <div class="banner-caption">
                 <div class="container">
+                    <div class="pic-row">
+                        <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                            <img src="images/profile-pic.png" class="profile-pic"/>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+                            <!--<img src="images/profile-pic.png" class="profile-pic"/>-->
                             <h1 class="text-center">Ryan McCaffrey</h1>
-                            <p class="lead text-center">Oh, Greta Huang</p>
+                            <p class="lead text-center">B.S.E. Computer Science | Princeton University</p>
                         </div>
                     </div>
                 </div>
@@ -142,37 +150,44 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 id="about" class="title text-center">About <span>Greta</span></h1>
-                        <p class="lead text-center">Truly the most beautiful girl I know.</p>
+                        <!-- <h1 id="about" class="title text-center">About <span>Greta</span></h1> -->
+                        <h1 id="about" class="title text-center">Projects</span></h1>
+                        <!-- <p class="lead text-center">Truly the most beautiful girl I know.</p> -->
                         <div class="space"></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <img src="images/greta.jpg" alt="">
                                 <div class="space"></div>
                             </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <h2>dwn2</h2>
+                            </div>
                             <div class="col-md-6">
-                                <p>Just...look at her.</p>
-                                <p>Oh yes.</p>
                                 <ul class="list-unstyled">
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Baby, you light up my world.</li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> You are like nobody else. </li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> The way that you flip your hair gets my overwhelmed.</li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> You do not know that you are beautiful.</li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> You are a firework.</li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> I am just like a plastic bag.</li>
-                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> I am drifting through the wind.</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> iOS application that allows users to create events and invite friends for spontaneous meet-ups. Implements a push notification system that only remains active when friends confirm their invite to the event; a declined invite or lack of response after a short period (user defined) mute notifications</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Includes product website (currently unsearchable)</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Developed app entirely; gained experience as a full-stack programmer</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Improved abilities in using Bootstrap framework, HTML, CSS, Swift, and Xcode</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Utilized Microsoft Azure database and Facebook API for secure login</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="space"></div>
-                        <h2>Greta Yining Huang</h2>
+                        <h2>Honor Society Point Tracker</h2>
                         <div class="row">
                             <div class="col-md-6">
-                                <p>I once had the privilege of going to school with Greta.</p>
-                                <p>Those were the best days of my life.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Java program that efficiently documents and tracks points earned by members in my high school’s Math Honor Society</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Features password protection and user customization</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Implements automated emailing and exporting data to spreadsheet functions</li>
+                                    <li><i class="fa fa-caret-right pr-10 text-colored"></i> Gained proficiency in NetBeans IDE, Java Swing</li>
+                                </ul>
                             </div>
                             <div class="col-md-6">
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <img src="images/greta.jpg" alt="">
+                                <div class="space"></div>
+                                <!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
@@ -215,7 +230,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -228,12 +243,12 @@
         <!-- ================ -->
         <div class="section translucent-bg bg-image-1 blue">
             <div class="container object-non-visible" data-animation-effect="fadeIn">
-                <h1 id="services"  class="text-center title">John Cena</h1>
+                <h1 id="research"  class="text-center title">Experimental Research</h1>
 
                 <div class="text-center"> 
-                    <iframe width="640" height="430" autoplay="1"
+                    <!-- <iframe width="640" height="430" autoplay="1"
                     src="http://www.youtube.com/embed/wRRsXxE1KVY?autoplay=1">
-                    </iframe>
+                    </iframe> -->
                 </div>
 
 
@@ -243,7 +258,7 @@
 
         <!-- section start -->
         <!-- ================ -->
-        <div class="default-bg space blue">
+        <!-- <div class="default-bg space blue">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
@@ -251,8 +266,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- section end -->
+        </div> -->
+        <!-- section end --> 
 
         <!-- section start -->
         <!-- ================ -->
@@ -263,7 +278,7 @@
         <!-- ================ -->
         <div class="section translucent-bg bg-image-2 pb-clear">
             <div class="container object-non-visible" data-animation-effect="fadeIn">
-                <h1 id="clients" class="title text-center">My Friends</h1>
+                <h1 id="contact" class="title text-center">Resume</h1>
                 <div class="space"></div>
                 <div class="row">
                     <div class="col-md-4">
@@ -419,7 +434,7 @@
             <!-- ================ -->
             <div class="footer section">
                 <div class="container">
-                    <h1 class="title text-center" id="contact">Contact Greta</h1>
+                    <h1 class="title text-center" id="contact">Contact Me!</h1>
                     <div class="space"></div>
                     <div class="row">
                         <div class="col-sm-6">
