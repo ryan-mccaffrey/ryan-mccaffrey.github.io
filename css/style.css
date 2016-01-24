@@ -602,8 +602,13 @@ textarea {
 	display: inline-block;
 	font-size: 36px;
 }
+.contact-links li {
+	margin: 10px 25px 10px 0;
+	display: inline-block;
+	font-size: 20px;
+}
 .social-links li a {
-	color: #333333;
+	color: #E5E5E5;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
