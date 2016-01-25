@@ -250,6 +250,9 @@ blockquote {
 .bg-image-2 {
 	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;
 }
+.section-wrapper-1 {
+	background: rgba(204, 204, 204, .15);
+}
 
 /* Misc
 ----------------------------------------------------------------------------- */
@@ -277,6 +280,9 @@ blockquote {
 .space {
 	padding: 20px 0;
 }
+.leetl-space {
+	padding: 10px 0;
+}
 .pr-10 {
 	padding-right: 10px;
 }
@@ -285,6 +291,9 @@ blockquote {
 }
 .pb-clear {
 	padding-bottom: 0;
+}
+.pl-100 {
+	padding-left: 100px;
 }
 
 /* Sections
@@ -323,13 +332,14 @@ blockquote {
 	transition: all 0.2s ease-in-out;
 }
 .btn-default {
-	color: #55acee;
-	border: 1px solid #cccccc;
+	color: #ffffff;
+	background-color: #339BEB;
+	border: 1px solid #339beb
 }
 .btn-default:hover {
 	color: #ffffff;
-	background-color: #339BEB;
-	border-color: #339BEB;
+	background-color: #8bc6f4;
+	border: 1px solid #8bc6f4;
 }
 
 /* Collapse
@@ -615,6 +625,14 @@ textarea {
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+.contact-links li a {
+	color: #E5E5E5;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
 .social-links li.twitter a:hover {
 	color: #55acee;
 }
@@ -638,6 +656,9 @@ textarea {
 }
 .social-links li.pinterest a:hover {
 	color: #cb2027;
+}
+.contact-links li.fa-media a:hover {
+	color: #00aff0;
 }
 
 /* Isotope Items
