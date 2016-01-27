@@ -252,6 +252,7 @@ blockquote {
 }
 .section-wrapper-1 {
 	background: rgba(204, 204, 204, .15);
+	padding: 25px 0px;
 }
 
 /* Misc
@@ -322,7 +323,7 @@ blockquote {
 	font-size: 14px;
 	line-height: 1.42857143;
 	min-width: 160px;
-	text-align: center;
+	margin: 0 auto;
 	border-radius: 0;
 	text-transform: uppercase;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -639,6 +640,9 @@ textarea {
 .social-links li.skype a:hover {
 	color: #00aff0;
 }
+.social-links li.spotify a:hover {
+	color: #1ed760;
+}
 .social-links li.linkedin a:hover {
 	color: #0976b4;
 }
@@ -653,6 +657,9 @@ textarea {
 }
 .social-links li.facebook a:hover {
 	color: #3b5998;
+}
+.social-links li.github a:hover {
+	color: #4078c0;
 }
 .social-links li.pinterest a:hover {
 	color: #cb2027;
