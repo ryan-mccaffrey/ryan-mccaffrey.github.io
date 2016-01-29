@@ -335,12 +335,22 @@ blockquote {
 .btn-default {
 	color: #ffffff;
 	background-color: #339BEB;
-	border: 1px solid #339beb
+	border: 1px solid #339beb;
 }
 .btn-default:hover {
 	color: #ffffff;
 	background-color: #8bc6f4;
 	border: 1px solid #8bc6f4;
+}
+.btn-default-2 {
+	color: #ffffff;
+	background-color: #1a1a1a;
+	border: 1px solid #1a1a1a;
+}
+.btn-default-2:hover {
+	color: #ffffff;
+	background-color: #595959;
+	border: 1px solid #595959;
 }
 
 /* Collapse
