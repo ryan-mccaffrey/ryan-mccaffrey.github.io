@@ -1,637 +1,256 @@
-<!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>Ryan McCaffrey</title>
-        <meta name="description" content="Ryan McCaffrey's E-portfolio">
-        <meta name="Ryan McCaffrey" content="mccaffreyryan.com">
+<!DOCTYPE HTML>
+<html>
+	<head>
 
-        <!-- Mobile Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Things to look into: Image preloading, open graph protocol, copyToClipboard: check if browser supports functionality (otherwise just do a mailto), switch background with every refresh?, GOOGLE ANALYTICS, scroll easing -->
+		<title>Ryan McCaffrey - Web Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Ryan McCaffrey&#39;s Personal Website">
+		<meta name="keywords" content="RyanMcCaffrey,Ryan,McCaffrey,Portfolio">
+		<meta name="author" content="Ryan McCaffrey">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Favicon -->
-        <!--<link rel="shortcut icon" href="images/favicon.ico">-->
-        <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+		<!-- ****** Favicons ****** -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+		<link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
+		<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
 
-        <!-- Web Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+		<!-- Open Graph Protocol -->
+		<meta property="og:title" content="Ryan McCaffrey - Portfolio Website">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://ryan-mccaffrey.github.io/images/profile-pic-small.png">
+		<meta property="og:description" content="Personal website to describe my various coding projects and research experiments.">
 
-        <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- CSS -->
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/main.css">
 
-        <!-- Font Awesome CSS -->
-        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<!-- Scripts -->
+		<script src="js/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script src="js/tether.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/baffle.min.js"></script>
 
-        <!-- Plugins -->
-        <link href="css/animations.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header" style="background-image: url('images/linen_vertical.jpg');">
 
-        <!--<link href="css/stylev3.min.css" rel="stylesheet">-->
+				<span class="image avatar"><img src="images/profile-pic-small.png" alt="ryan-mccaffrey-avatar" /></span>
+				<h1><strong>Ryan McCaffrey</strong></h1>
+				<h1>B.S.E. Computer Science</h1>
+				<h1>Princeton University</h1>
+				<!-- <img src="images/PUsig2-ww-ws.png" style="width: 12em"> -->
+				<h1>Class of 2019</h1>
+				
+				<br /><br />
+				<!-- preload bg image --><!-- <img style="display:none;" src="images/bg.jpg"> -->
+			</header>
 
-        <!-- Worthy core CSS file -->
-        <link href="css/style.css" rel="stylesheet">
+		<!-- Footer -->
+			<footer id="footer">
 
-        <!-- Custom css --> 
-        <link href="css/custom.css" rel="stylesheet">
-    </head>
+				<!-- Social media icon list -->
+				<nav>
+				<ul class="icons">
+					<li><a href="https://github.com/ryan-mccaffrey" class="icon fa fa-github-square github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/ryanmccaffrey42" class="icon fa fa-linkedin-square linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a id="fa-email" data-toggle="popover" data-trigger="manual" data-content="Copied email to clipboard!" data-placement="top" data-delay='{"show":0, "hide":2000}' onclick="copyToClipboard('#fa-email')" meta="ryan.mccaffrey.42@gmail.com" class="icon fa fa-envelope-square"><span class="label">Email</span></a></li>
+					<li><a id="resume" href="files/RyanMcCaffrey_Resume.pdf" class="icon fa fa-file-text" target="_blank"><span class="label">Resume</span></a></li>
+					<li id="spotify-icon" style="display:none;"><a id="spotify" href="https://open.spotify.com/user/1268312476" class="icon fa fa-spotify spotify"><span class="label">Spotify</span></a></li>
+				</ul>
+				</nav>
+			</footer>
 
-    <body class="no-trans">
-        <!-- scrollToTop -->
-        <!-- ================ -->
-        <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+		<!-- Main -->
+			<div id="main">
 
-        <!-- header start -->
-        <!-- ================ --> 
-        <header class="header fixed clearfix navbar navbar-fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+				<!-- Navigation bar -->
+				<section id="navigation">
+					<nav class="navbar navbar-inverse navbar-fixed-top">
+						<div class="container-fluid">
+					    	<ul class="nav navbar-nav navbar-center" id="top-menu">
+					      		<li><a class="scrolldown" href="#projects">Projects</a></li>
+					      		<li><a class="scrolldown" href="#research">Research</a></li>
+					    	</ul>
+					  	</div>
+					</nav>
+				</section>
 
-                        <!-- header-left start -->
-                        <!-- ================ -->
-                        <div class="header-left clearfix">
+				<!-- About Me -->
+				<section id="about">
+					<h2 class="baffle-this">Ryan McCaffrey</h2>
+					<p class="baffle-this">I&#39;m a second year computer science student at Princeton University. Be sure to see my resume and Github for more about me.</p>
+				</section>
 
-                            <!-- logo -->
-                            <div class="logo smooth-scroll">
-                                <a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
-                            </div>
+				<!-- Projects -->
+				<section id="projects">
+					<h2>My Projects</h2>
+					
+					<div class="container-fluid row">
+						<article class="col-md-4">
+							<a href="#dwn2-ios-app" class="image fit thumb scrolldown"><img class="basic-border" src="images/placeit-dwn2.png" alt="dwn2 iOS App - Ryan McCaffrey" /></a>
+							<h3><a href="#dwn2-ios-app" class="scrolldown">dwn2</a></h3>
+							<p>iOS app built during HackPrinceton (Nov. 2015)</p>
+						</article>
 
-                            <!-- name-and-slogan -->
-                            <div class="site-name-and-slogan smooth-scroll">
-                                <div class="site-name"><a href="#banner">Ryan McCaffrey</a></div>
-                                <!--<div class="site-slogan">A website about Greta by <a target="_blank" href="http://gretahuang.me">Ryan McCaffrey</a></div>-->
-                            </div>
+						<article class="col-md-4">
+							<a href="#mhs-point-tracker" class="image fit thumb scrolldown"><img class="basic-border" src="images/placeit-MHS-thumb.jpg" alt="Math Honor Society point tracker - Ryan McCaffrey" /></a>
+							<h3><a href="#mhs-point-tracker" class="scrolldown">Math Honor Society point tracker</a></h3>
+							<p>Java program for high school's Math Honor Society</p>
+						</article>
+					</div>
+				</section>
 
-                        </div>
-                        <!-- header-left end -->
+				<!-- Project details -->
 
-                    </div>
-                    <div class="col-md-8">
+					<!-- dwn2 -->
+					<section id="dwn2-ios-app" class="project-details">
 
-                        <!-- header-right start -->
-                        <!-- ================ -->
-                        <div class="header-right clearfix">
+						<h1>dwn2</h1>
+						<p>dwn2 is an iOS application that allows users to create events and invite friends for spontaneous meet-ups.</p>
 
-                            <!-- main-navigation start -->
-                            <!-- ================ -->
-                            <div class="main-navigation animated">
-
-                                <!-- navbar start -->
-                                <!-- ================ -->
-                                <nav class="navbar navbar-default" role="navigation">
-                                    <div class="container-fluid">
-
-                                        <!-- Toggle get grouped for better mobile display -->
-                                        <div class="navbar-header">
-                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                        </div>
-
-                                        <!-- Collect the nav links, forms, and other content for toggling -->
-                                        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li class="active"><a href="#banner">About</a></li>
-                                                <li><a href="#projects">Projects</a></li>
-                                                <li><a href="#research">Experimental Research</a></li>
-                                                <li><a href="#resume">Resume</a></li>
-                                                <li><a href="#contact">Contact</a></li>
-                                                <!-- <li><a href="#contact">Huang</a></li> -->
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </nav>
-                                <!-- navbar end -->
-
-                            </div>
-                            <!-- main-navigation end -->
-
-                        </div>
-                        <!-- header-right end -->
-
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header end -->
-
-        <!-- banner start -->
-        <!-- ================ -->
-        <div id="banner" class="banner">
-            <div class="banner-image"></div>
-            <div class="banner-caption">
-                <div class="container">
-                    <!--<div class="pic-row">
-                        <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-                            <img src="images/profile-pic.png" class="profile-pic"/>
-                        </div>
-                    </div>-->
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-                            <img src="images/profile-pic-reducedsize.png" class="profile-pic"/>
-                            <div class="profile-description">
-                                <!--<h1 class="text-center">Ryan McCaffrey</h1>
-                                <p class="lead text-center">B.S.E. Computer Science | Princeton University</p>-->
-                                Ryan McCaffrey<br /> <small>B.S.E. Computer Science | Princeton University</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- banner end -->
-
-        <!-- section start -->
-        <!-- ================ -->
-        <div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <!-- <h1 id="about" class="title text-center">About <span>Greta</span></h1> -->
-                        <h1 id="projects" class="title text-center">Projects</span></h1>
-                        <!-- <p class="lead text-center">Truly the most beautiful girl I know.</p> -->
-                        <div class="space"></div>
-
-                        <div class="section-wrapper-1">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="space"></div>
-                                    <div class="space"></div>
-                                    <img class="center-block" src="images/placeit-dwn2.png" alt="">
-                                    <div class="space"></div>
-                                </div>
-                                <div class="col-md-6 text-center">
-                                    <h2>dwn2</h2>
-                                    <ul class="list-unstyled text-justify" style="padding-right:30px;">
-                                        <li><i class="fa fa-caret-right pr-10 text-colored text-justify"></i> iOS application that allows users to create events and invite friends for spontaneous meet-ups. Implements a push notification system that only remains active when friends confirm their invite to the event; a declined invite or lack of response after a short period (user defined) mute notifications</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Includes product website (currently unsearchable)</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Team project, developed app from scratch; gained experience as a full-stack programmer</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Improved abilities in using Bootstrap framework, HTML, CSS, Swift, and Xcode</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Utilized Microsoft Azure database and Facebook API for secure login</li> 
-                                    </ul>
-                                    <div class="leetl-space"></div>
-                                    <a class="app-link" href="https://github.com/dwn2" target="_blank"><button class="btn btn-default">Visit dwn2</button></a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="leetl-space"></div>
-
-                        <div class="section-wrapper-1">
-                            <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <h2 class="text-center" style="padding-left:30px;">Honor Society Point Tracker</h2>
-                                    <ul class="list-unstyled text-justify" style="padding-left:30px;">
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Java program that efficiently documents and tracks points earned by members in my high school’s Math Honor Society (MHS)</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Features password protection and user customization</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Implements automated emailing and exporting data to spreadsheet functions</li>
-                                        <li><i class="fa fa-caret-right pr-10 text-colored"></i> Gained proficiency in NetBeans IDE, Java Swing</li>
-                                    </ul>
-                                    <div class="leetl-space"></div>
-                                    <a class="app-link" href="https://github.com/ryan-mccaffrey/MHS_PointTracker" target="_blank"><button class="btn btn-default">Visit MHS Point Tracker</button></a>
-                                </div>
-                                <div class="col-md-6 space">
-                                    <div class="leetl-space"></div>
-                                    <img class="center-block" src="images/placeit-MHS.png" alt="">
-                                    <div class="leetl-space"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                                <!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Greta
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                So cute.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Yining
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                So pretty.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Huang
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                So...small.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- section end -->
-
-        <!-- section start -->
-        <!-- ================ -->
-        <div class="section translucent-bg bg-image-1 blue">
-            <div class="container object-non-visible" data-animation-effect="fadeIn">
-                <h1 id="research"  class="text-center title">Experimental Research</h1>
-
-                
-                <div class="row">
-                    <div class="space"></div>
-
-                    <div class="section-wrapper-1">
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <h2 class="text-center" style="padding-left:30px;">“Creation of a Drug Delivery System for Dexamethasone Differentiation of Dental Pulp Stem Cells”</h2>
-                                <p class="text-justify" style="padding-left:30px;">Worked under distinguished materials engineering researcher Miriam Rafailovich to develop a drug delivery mechanism composed of a 3-dimensional printed surface and dexamethasone to differentiate dental pulp stem cells.</p>
-                                <div class="space"></div>
-                                <a class="app-link" target="_blank"><button class="btn btn-default-2" onClick="window.open('documents/DrugDeliveryMechanism_Abstract.pdf');">View Abstract</button></a>
-                            </div>
-
-                            <div class="col-md-6 space">
-                                <div class="leetl-space"></div>
-                                <img class="center-block" src="images/dexamethasone_cells.png" alt="">
-                                <div class="space"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space"></div>
-
-                <div class="row">
-                    <div class="section-wrapper-1">
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <h2 class="text-center" style="padding-left:30px;">“The Construction of a 3-Dimensionally Segmented Dataset of Indoor Scenes Using the Microsoft Kinect”</h2>
-                                <p class="text-justify" style="padding-left:30px;">Researched under Professor Robert Fergus to develop an algorithm that segments images of indoor scenes into its components using support relationships between objects in image.</p>
-                                <div class="space"></div>
-                                <a class="app-link" target="_blank"><button class="btn btn-default-2" onClick="window.open('documents/IndoorSegmentation_Abstract.pdf');">View Abstract</button></a>
-                            </div>
-                            
-                            <div class="col-md-6 space">
-                                <div class="leetl-space"></div>
-                                <img class="center-block" src="images/notFound.png" alt="">
-                                <div class="space"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- section end -->
-
-        <!-- section start -->
-        <!-- ================ -->
-        <!-- <div class="default-bg space blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="text-center">Please love me.</h1>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- section end --> 
-
-        <!-- section start -->
-        <!-- ================ -->
-      
-        <!-- section end -->
-
-        <!-- section start -->
-        <!-- ================ -->
-        <div class="section translucent-bg bg-image-2 pb-clear">
-            <div class="container object-non-visible" data-animation-effect="fadeIn">
-                <h1 id="resume" class="title text-center">Resume</h1>
-                <div class="space"></div>
-                <object width="100%" height="1100" data="documents/RyanMcCaffrey_Resume.pdf"></object>
-                <div class="space"></div>
-                <div class="space"></div>
-                <!--<div class="row">
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-1.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Greta Huang</h3>
-                                <blockquote>
-                                    <p>A real person. She is lovely.</p>
-                                    <footer>Someone famous in <cite title="Source Title">A Book</cite></footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-2.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Nobody</h3>
-                                <blockquote>
-                                    <p>Lure</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-3.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Nobody Else</h3>
-                                <blockquote>
-                                    <p>Trick</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!--<div class="row">
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-2.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Oh man...</h3>
-                                <blockquote>
-                                    <p>Pyramid Scheme</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-3.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">Please be my friend.</h3>
-                                <blockquote>
-                                    <p>Fear</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="media testimonial">
-                            <div class="media-left">
-                                <img src="images/testimonial-1.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h3 class="media-heading">....please</h3>
-                                <blockquote>
-                                    <p>Terror</p>
-                                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer> 
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-            <!-- section start -->
-            <!-- ================ -->
-            <!-- <div class="translucent-bg blue">
-                <div class="container">
-                    <div class="list-horizontal">
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-1.png" alt="client">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-2.png" alt="client">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-3.png" alt="client">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-4.png" alt="client">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-5.png" alt="client">
-                                </div>
-                            </div>
-                            <div class="col-xs-2">
-                                <div class="list-horizontal-item">
-                                    <img src="images/client-6.png" alt="client">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- section end -->
-        </div>
-        <!-- section end -->
-
-        <!-- section start -->
-        <!-- ================ -->
-        <!--<div class="section default-bg space">
-            <div class="container">
-                <h1 class="title text-center" id="contact"><font color="#E5E5E5">Contact Me</font></h1>
-                <div class="space"></div>
-                <div class="row">
-                    <div class="col-sm-6 footer-content">
-                        <ul class="social-links">
-                            <li class="facebook"><a target="_blank" href="https://www.facebook.com/Ryan.42.McCaffrey"><i class="fa fa-facebook"></i></a></li>
-                            <li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>
-                            <li class="googleplus"><a target="_blank" href="https://plus.google.com/+RyanMcCaffrey1"><i class="fa fa-google-plus"></i></a></li>
-                            <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-                            <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/ryanmccaffrey42"><i class="fa fa-linkedin"></i></a></li>
-                            <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-                            <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-                            <li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+						<ul class="detail-list">
+                            <li>Implements a push notification system that only remains active when friends confirm their invite to the event; a declined invite or lack of response after a short period (user defined) mute notifications</li>
+                            <li>Includes product website (currently unsearchable)</li>
+                            <li>Team project, developed app from scratch; gained experience as a full-stack programmer</li>
+                            <li>Improved abilities in using Bootstrap framework, HTML, CSS, Swift, and Xcode</li>
+                            <li>Utilized Microsoft Azure database and Facebook API for secure login</li> 
                         </ul>
-                    </div>
-                    <div class="col-sm-6 footer-content">
-                        <ul class="contact-links">
-                            <li><i class="fa fa-envelope-o pr-10"></i><a href="mailto:ryan.mccaffrey.42@gmail.com" style="text-decoration:none;" target="_top">ryan.mccaffrey.42@gmail.com</a></li>
-                            <li><i class="fa fa-phone pr-10"></i> +1 (631) 707-5422</li>
+
+                        <div class="container-fluid row">
+                        	<div class="col-md-12">
+                        		<span class="image center"><img src="images/placeit-dwn2.png" alt="dwn2 iPhone display - Ryan McCaffrey"></span>
+                        	</div>
+                        </div>
+
+                        <p>See more <a href="https://github.com/dwn2">on GitHub</a>.</p>
+                        <br />
+						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
+					</section>
+
+
+					<!-- MHS Point Tracker -->
+					<section id="mhs-point-tracker" class="project-details">
+
+						<h1>Math Honor Society point tracker</h1>
+						<p>The Math Honor Society point tracker is a Java program that efficiently documents and tracks points earned by members in my high school’s Math Honor Society (MHS).</p>
+
+						<ul class="detail-list">
+                            <li>Features password protection and user customization</li>
+                            <li>Implements automated emailing and exporting data to spreadsheet functions</li>
+                            <li>Gained proficiency in NetBeans IDE, Java Swing</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- section end -->
 
-        <!-- footer start -->
-        <!-- ================ -->
-        <footer id="footer">
-
-            <!-- .footer start -->
-            <!-- ================ -->
-            <div class="footer section default-bg">
-                <div class="container">
-                    <h1 class="title text-center" id="contact"><font color="#E5E5E5">Contact Me</font></h1>
-                    <div class="space"></div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="footer-content pl-100">
-                                <!-- <p class="large">You cannot.</p> -->
-                                <ul class="social-links">
-                                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/Ryan.42.McCaffrey"><i class="fa fa-facebook"></i></a></li>
-                                    <!--<li class="twitter"><a target="_blank" href="https://twitter.com/HtmlcoderMe"><i class="fa fa-twitter"></i></a></li>-->
-                                    <li class="googleplus"><a target="_blank" href="https://plus.google.com/+RyanMcCaffrey1"><i class="fa fa-google-plus"></i></a></li>
-                                    <li class="spotify"><a target="_blank" href="https://open.spotify.com/user/1268312476"><i class="fa fa-spotify"></i></a></li>
-                                    <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/ryanmccaffrey42"><i class="fa fa-linkedin"></i></a></li>
-                                    <li class="github"><a target="_blank" href="https://github.com/ryan-mccaffrey"><i class="fa fa-github-alt"></i></a></li>
-                                    <!--<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
-                                    <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-                                    <li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>-->
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 footer-content pr-10">
-                            <ul class="contact-links">
-                                <li class="fa-media"><i class="fa fa-envelope-o pr-10"></i><a href="mailto:ryan.mccaffrey.42@gmail.com" style="text-decoration:none;" target="_top">ryan.mccaffrey.42@gmail.com</a></li>
-                                <li class="fa-media"><i class="fa fa-phone pr-10"></i><a href="tel:+16317075422" style="text-decoration:none;">+1 (631) 707-5422</a></li>
-                            </ul>
+                        <div class="container-fluid">
+                        	<div class="row">
+                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS1.png" alt="MHS point tracker, screenshot 1 - Ryan McCaffrey"></span></div>
+                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS2.png" alt="MHS point tracker, screenshot 2 - Ryan McCaffrey"></span></div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS3.png" alt="MHS point tracker, screenshot 3 - Ryan McCaffrey"></span></div>
+                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS4.png" alt="MHS point tracker, screenshot 4 - Ryan McCaffrey"></span></div>
+                        	</div>
                         </div>
 
+                        <p>See more <a href="https://github.com/ryan-mccaffrey/MHS_PointTracker">on GitHub</a>.</p>
+                        <br />
+						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
+					</section>
 
 
-                                <!--<ul class="list-icons">
-                                    <li><i class="fa fa-map-marker pr-10"></i> My Basement</li>
-                                    <li><i class="fa fa-phone pr-10"></i> +00 1234567890</li>
-                                    <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li>
-                                    <li><i class="fa fa-envelope-o pr-10"></i> your@email.com</li>
-                                </ul>
-                            </div>
+
+				<!-- Research -->
+				<section id="research">
+					<h2>My Research</h2>
+
+					<div class="container-fluid row">
+						<article class="col-md-4">
+							<a href="#dex-differentiation" class="image fit thumb scrolldown"><img class="basic-border" src="images/dexamethasone_cells-thumb.png" alt="Cells with dexamethasone - Ryan McCaffrey" /></a>
+							<h3><a href="#dex-differentiation" class="scrolldown">Dexamethasone drug delivery system</a></h3>
+							<p>Materials science research conducted at Stony Brook University.</p>
+						</article>
+
+						<article class="col-md-4">
+							<a href="#segmentation-research" class="image fit thumb scrolldown"><img class="basic-border" src="images/sceneSegmentation-thumb.png" alt="Kinect segmentation image - Ryan McCaffrey" /></a>
+							<h3><a href="#segmentation-research" class="scrolldown">Indoor scene segmentation</a></h3>
+							<p>Computer vision research conducted at New York University.</p>
+						</article>
+					</div>
+				</section>
+
+
+
+				<!-- Research details -->
+
+					<!-- Dex Proj -->
+					<section id="dex-differentiation" class="project-details">
+
+						<h1>"Creation of a Drug Delivery System for Dexamethasone Differentiation of Dental Pulp Stem Cells"</h1>
+						<p>Worked under distinguished materials engineering researcher Miriam Rafailovich to develop a drug delivery mechanism composed of a 3-dimensional printed surface and dexamethasone to differentiate dental pulp stem cells.</p>
+
+                        <div class="container-fluid">
+                        	<div class="row">
+                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_1.png" alt="MHS point tracker, screenshot 1 - Ryan McCaffrey"></span></div>
+                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_2.png" alt="MHS point tracker, screenshot 2 - Ryan McCaffrey"></span></div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_3.png" alt="MHS point tracker, screenshot 3 - Ryan McCaffrey"></span></div>
+                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_4.png" alt="MHS point tracker, screenshot 4 - Ryan McCaffrey"></span></div>
+                        	</div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="footer-content">
-                                <form role="form" id="footer-form">
-                                    <div class="form-group has-feedback">
-                                        <label class="sr-only" for="name2">Name</label>
-                                        <input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
-                                        <i class="fa fa-user form-control-feedback"></i>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <label class="sr-only" for="email2">Email address</label>
-                                        <input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
-                                        <i class="fa fa-envelope form-control-feedback"></i>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <label class="sr-only" for="message2">Message</label>
-                                        <textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
-                                        <i class="fa fa-pencil form-control-feedback"></i>
-                                    </div>
-                                    <input type="submit" value="Send" class="btn btn-default">
-                                </form>
-                            </div>
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-            <!-- .footer end -->
 
-            <!-- .subfooter start -->
-            <!-- ================ -->
-            <!--<div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-center">Copyright © 2016 Ryan by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <!-- .subfooter end -->
+                        <p><a href="files/DrugDeliveryMechanism_Abstract.pdf" target="_blank">View abstract</a> to read more about the project.</p>
+                        <br />
+						<p style="text-align: right;"><a href="#research" class="scrollup">Back to Research <i class="fa fa-arrow-up"></i></a></p>
+					</section>
 
-        </footer>
-        <!-- footer end -->
+					<!-- Kinect segmentation proj -->
+					<section id="segmentation-research" class="project-details">
 
-        <!-- JavaScript files placed at the end of the document so the pages load faster
-        ================================================== -->
-        <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="plugins/jquery.min.js"></script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+						<h1>"The Construction of a 3-Dimensionally Segmented Dataset of Indoor Scenes Using the Microsoft Kinect"</h1>
+						<p>Researched under Professor Robert Fergus to develop an algorithm that segments images of indoor scenes into its components using support relationships between objects in image.</p>
 
-        <!-- Modernizr javascript -->
-        <script type="text/javascript" src="plugins/modernizr.js"></script>
+                        <span class="image fit"><img src="images/segmentation-image_1.png" alt="Kinect segmentation image - Ryan McCaffrey"></span>
 
-        <!-- Isotope javascript -->
-        <script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
-        
-        <!-- Backstretch javascript -->
-        <script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+                        <p><a href="files/IndoorSegmentation_Abstract.pdf" target="_blank">View abstract</a> to read more about the project.</p>
+                        <br />
+						<p style="text-align: right;"><a href="#research" class="scrollup">Back to Research <i class="fa fa-arrow-up"></i></a></p>
+					</section>
+			</div>
 
-        <!-- Appear javascript -->
-        <script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
-        <!-- Initialization of Plugins -->
-        <script type="text/javascript" src="js/template.js"></script>
+		<!-- Scripts -->
+		<script src="js/functions.js"></script>
+		<script>
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover(); 
+		});
+		</script>
 
-        <!-- Custom Scripts -->
-        <script type="text/javascript" src="js/custom.js"></script>
-
-        <!-- Google analytics -->
+		<!-- Google analytics -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -643,5 +262,5 @@
 
         </script>
 
-    </body>
+	</body>
 </html>
