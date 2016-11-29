@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<!-- Things to look into: Image preloading, open graph protocol, copyToClipboard: check if browser supports functionality (otherwise just do a mailto), switch background with every refresh?, GOOGLE ANALYTICS, scroll easing -->
+		<!-- Things to look into: Image preloading, copyToClipboard: check if browser supports functionality (otherwise just do a mailto), switch background with every refresh?, GOOGLE ANALYTICS, check that meyerweb blog for cross browser compatibility (edit the css tidbit up top), moving header background image into css file -->
 		<title>Ryan McCaffrey - Web Portfolio</title>
 		<meta charset="utf-8">
 		<meta name="description" content="Ryan McCaffrey&#39;s Personal Website">
@@ -57,7 +57,7 @@
 	</head>
 	<body>
 		<!-- Header -->
-			<header id="header" style="background-image: url('images/linen_vertical.jpg');">
+			<header id="header" style="background-image: url('images/table_wood.jpg');">
 
 				<span class="image avatar"><img src="images/profile-pic-small.png" alt="ryan-mccaffrey-avatar" /></span>
 				<h1><strong>Ryan McCaffrey</strong></h1>
@@ -102,8 +102,9 @@
 
 				<!-- About Me -->
 				<section id="about">
-					<h2 class="baffle-this">Ryan McCaffrey</h2>
-					<p class="baffle-this">I&#39;m a second year computer science student at Princeton University. Be sure to see my resume and Github for more about me.</p>
+					<noscript>For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript>
+					<h1>Ryan McCaffrey</h1>
+					<p>Student, software developer, sushi enthusiast.</p>
 				</section>
 
 				<!-- Projects -->
@@ -112,9 +113,15 @@
 					
 					<div class="container-fluid row">
 						<article class="col-md-4">
+							<a href="#pumac-app" class="image fit thumb scrolldown"><img class="basic-border" src="images/pumac_logo.png" alt="PUMaC - Ryan McCaffrey" /></a>
+							<h3><a href="#pumac-app" class="scrolldown">PUMaC Web Application</a></h3>
+							<p>Django application for the Princeton math competition</p>
+						</article>
+
+						<article class="col-md-4">
 							<a href="#dwn2-ios-app" class="image fit thumb scrolldown"><img class="basic-border" src="images/placeit-dwn2.png" alt="dwn2 iOS App - Ryan McCaffrey" /></a>
 							<h3><a href="#dwn2-ios-app" class="scrolldown">dwn2</a></h3>
-							<p>iOS app built during HackPrinceton (Nov. 2015)</p>
+							<p>iOS app built at HackPrinceton (Nov. 2015)</p>
 						</article>
 
 						<article class="col-md-4">
@@ -127,6 +134,24 @@
 
 				<!-- Project details -->
 
+					<section id="pumac-app" class="project-details">
+
+						<div class="project-header">
+							<h1>PUMaC Web Application</h1>
+							<img id="pumac-logo" src="images/pumac.png" title="PUMaC logo" alt="PUMaC logo">
+						</div>
+						<p>The Princeton University Mathematics Competition (PUMaC) is an annual international high schoool math competition.</p>
+
+						<ul class="detail-list">
+							<li>Built a web application that supports registration for teams and proctors, score input, computation of competition winners</li>
+							<li>Includes support for “live round” component of competition, where question correctness checks and team score updates are performed real-time</li>
+							<li>Ongoing project with small team. Currently serving as tech team leader</li>
+							<li>Technologies include Django framework, MySQL database</li>
+							<li>Check our progress <a href="https://pumac.princeton.edu/">here!</a></li>
+						</ul>
+
+						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
+					</section>
 					<!-- dwn2 -->
 					<section id="dwn2-ios-app" class="project-details">
 

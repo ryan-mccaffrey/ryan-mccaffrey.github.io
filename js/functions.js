@@ -118,7 +118,7 @@ $('#fa-email').click(function () {
 	// setTimeout(function() {
 	// 	$('.popover').stop(true, true).fadeTo(800, 0, function() { $('#fa-email').popover('hide'); });
 	// }, 2000);
-	$('.popover').stop(true, true).fadeTo(1000, 100).fadeTo(500, 0, function () { $('#fa-email').popover('hide'); });
+	$('.popover').stop(true, true).fadeTo(2000, 100).fadeTo(500, 0, function () { $('#fa-email').popover('hide'); });
 }); 
 
 

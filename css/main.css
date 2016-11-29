@@ -1,6 +1,58 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu);
 
+/* Reset styles for cross browser compatability */
+
+/*****************/
+/**** GENERAL ****/
+/*****************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+
 /* Box Model */
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
@@ -44,7 +96,7 @@ a {
 
 p {
 	margin: 0 0 2em 0;
-	font-size: 1.2em;
+	/*font-size: 1em;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,22 +114,24 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 h1 {
-	font-size: 2em;
+	font-size: 1.75em;
 	line-height: 1.5em;
 }
 
 h2 {
-	font-size: 1.75em;
+	font-size: 1.5em;
 	line-height: 1.5em;
 	text-align: center;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
-/* Images */
+/*****************/
+/**** IMAGES *****/
+/*****************/
 
 	.image {
 		border-radius: 0.35em;
@@ -180,7 +234,7 @@ h3 {
 		.image.center {
 			text-align: center;
 		}
-		
+
 		.image.avatar {
 		    -webkit-border-radius: 50%;
 		    -moz-border-radius: 50%;
@@ -196,7 +250,7 @@ h3 {
 			    float: right;
 				margin: 0 auto;
 			    height: auto;
-			    width: 150%;
+			    width: 130%;
 				border:2px solid #ffffff;
 				
 				-webkit-border-radius: 50%;
@@ -242,7 +296,10 @@ bottom: -15px;
 left: 50px;
 }*/
 
-/* Icon */
+/*****************/
+/**** ICONS ******/
+/*****************/
+
 .icon {
 	text-decoration: none;
 	border-bottom: none;
@@ -268,12 +325,15 @@ left: 50px;
 }
 
 
-/* List */
+/*****************/
+/**** LISTS ******/
+/*****************/
+
 ul {
 		list-style: square;
 		margin: 0 0 1em 0;
 		padding-left: 1em;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 		ul li {
@@ -412,10 +472,16 @@ ul {
 
 
 
+/*****************/
+/**** HEADER *****/
+/*****************/
 
-/* Header */
 	#header {
 		background-color: #160B09;
+		
+		-webkit-background-size:auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
 		background-size: auto;
 		background-position: left top;
 		background-repeat: repeat;
@@ -427,9 +493,9 @@ ul {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 30%;
+		width: 27.5%;
 
-		text-shadow: 1px 1px 15px #ffffff;
+		/*text-shadow: 1px 1px 15px #ffffff;*/
 	}
 
 		#header strong, #header b {
@@ -444,14 +510,14 @@ ul {
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.6);
-			font-size: 1.5em;
+			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
 		}
 
 		#header h1 strong {
-			font-size: 1.35em;
-			line-height: 1.75em;
+			font-size: 1.2em;
+			/*line-height: 1.75em;*/
 		}
 
 		#header .image.avatar {
@@ -459,19 +525,22 @@ ul {
 			width: 7em;
 		}
 
-/* Footer */
+/*****************/
+/**** FOOTER *****/
+/*****************/
+
 	#footer {
 		bottom: 0;
 		left: 0;
 		padding: 0 4em 4em 0;
 		position: fixed;
 		text-align: right;
-		width: 30%;
-		text-shadow: 1px 1px 25px #fff;
+		width: 27.5%;
+		/*text-shadow: 1px 1px 25px #fff;*/
 	}
 		#footer .icons {
 			margin: 1em 0 0 0;
-			font-size: 2em;
+			font-size: 1.8em;
 		}
 
 			#footer .icons a {
@@ -489,7 +558,7 @@ ul {
 			}
 			#footer .icons a.spotify {
 				color: rgba(30, 215, 96, 0.5);
-				text-shadow: 1px 1px 25px #1ed760;
+				/*text-shadow: 1px 1px 25px #1ed760;*/
 			}
 			#footer .icons a.spotify:hover {
 				color: #1ed760;
@@ -501,13 +570,15 @@ ul {
 				color: #cde3f0 !important;
 			}*/
 
-/* Main */
+/*****************/
+/***** MAIN ******/
+/*****************/
 
 	#main {
-		margin-left: 30%;
+		margin-left: 27.5%;
 		/* max-width: 54em; */
 		padding: 8em 4em 4em 4em;
-		width: calc(100% - 30%);
+		width: calc(100% - 27.5%);
 	}
 
 		#main > section {
@@ -528,11 +599,12 @@ ul {
 
 	#main #about h2 {
 		text-align: left;
+		/*margin: 0 auto 0;*/
 	}
 /* Navigation bar */
 	.navbar {
-		margin-left: 30%;
-		width: calc(100% - 30%);
+		margin-left: 27.5%;
+		width: calc(100% - 27.5%);
 	}
 	/*.navbar.nav.navbar-nav > li {
 		margin: 5em 0 0 0;
@@ -540,9 +612,9 @@ ul {
 	.navbar-center {
 		float: right;
 		position: relative;
-		/*left: -50%;*/
-		right: 35%;
-		text-align: left;
+		left: -36.25%;
+		/*right: 50%;*/
+		text-align: center;
 	}
 
 /* Small margin bellow images in project list */
@@ -557,5 +629,20 @@ ul {
 
 	.basic-border {
 		border: 1px solid black;
+	}
+
+	#pumac-logo {
+		width: 25%;
+	}
+
+	.project-header {
+		display: inline-block;
+	}
+	.project-header h1 {
+		float: left;
+	}
+	.project-header img {
+		float: right;
+		margin: .5% auto 0;
 	}
 
