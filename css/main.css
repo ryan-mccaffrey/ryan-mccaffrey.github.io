@@ -682,6 +682,7 @@ ul {
 				text-align: center;
 				top: auto;
 				width: 100%;
+				background-size: 100% auto;
 			}
 
 				#header h1 {
@@ -692,8 +693,20 @@ ul {
 						display: inline;
 					}
 
-			.navigation {
-				display: none;
+			/* Navigation bar */
+			.navbar {
+				margin-left: 27.5%;
+				width: 100%;
+			}
+			/*.navbar.nav.navbar-nav > li {
+				margin: 5em 0 0 0;
+			}*/
+			.navbar-center {
+				float: right;
+				position: relative;
+				left: -45%;
+				/*right: 50%;*/
+				text-align: center;
 			}
 
 		/* Footer */
