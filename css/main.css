@@ -693,6 +693,8 @@ ul {
 						display: inline;
 					}
 			.image.avatar img {
+				display: block;
+				width: 100%;
 			    float: none;
 				margin-left: auto;
 				margin-right: auto;
@@ -734,7 +736,7 @@ ul {
 				width: 100%;
 			}
 			.image.center img {
-				width: 30%;
+				width: 100%;
 			}
 
 	}
