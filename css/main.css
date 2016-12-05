@@ -694,19 +694,14 @@ ul {
 					}
 
 			/* Navigation bar */
-			.navbar {
-				margin-left: 27.5%;
-				width: 100%;
+			#navigation {
+				display: none;
 			}
-			/*.navbar.nav.navbar-nav > li {
-				margin: 5em 0 0 0;
-			}*/
+			.navbar {
+				display: none;
+			}
 			.navbar-center {
-				float: right;
-				position: relative;
-				left: -45%;
-				/*right: 50%;*/
-				text-align: center;
+				display: none;
 			}
 
 		/* Footer */
@@ -724,6 +719,14 @@ ul {
 				margin: 0;
 				padding: 4em 4em;
 				width: 100%;
+			}
+
+			.helper-logo {
+				display: none;
+			}
+
+			.image.center {
+				width: 30%;
 			}
 
 	}
