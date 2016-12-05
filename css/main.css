@@ -479,12 +479,12 @@ ul {
 	#header {
 		background-color: #160B09;
 		
-		-webkit-background-size:auto;
-		-moz-background-size: auto;
-		-o-background-size: auto;
-		background-size: auto;
-		background-position: left top;
-		background-repeat: repeat;
+		-webkit-background-size:auto 100%;
+		-moz-background-size: auto 100%;
+		-o-background-size: auto 100%;
+		background-size: auto 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
 
 		color: rgba(255, 255, 255, 0.7);
 		height:100%;
@@ -646,3 +646,108 @@ ul {
 		margin: .5% auto 0;
 	}
 
+
+/*****************/
+/** MOBILE VIEWS */
+/*****************/
+
+/* XLarge */
+
+	@media screen and (max-width: 1800px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+	}
+
+/* Medium */
+
+	@media screen and (max-width: 980px) {
+
+		/* List */
+
+			ul.icons li .icon {
+				font-size: 1.25em;
+			}
+
+		/* Header */
+
+			#header {
+				left: auto;
+				padding: 6em 4em;
+				position: relative;
+				text-align: center;
+				top: auto;
+				width: 100%;
+			}
+
+				#header h1 {
+					font-size: 1.75em;
+				}
+
+					#header h1 br {
+						display: inline;
+					}
+
+			.navigation {
+				display: none;
+			}
+
+		/* Footer */
+			#footer {
+				position: relative;
+				text-align: center;
+				margin-top: -8em;
+				padding: 0px;
+				width: 100%;
+			}
+
+		/* Main */
+
+			#main {
+				margin: 0;
+				padding: 4em 4em;
+				width: 100%;
+			}
+
+	}
+
+/* Small */
+
+	@media screen and (max-width: 736px) {
+
+		/* Basic */
+
+			h1 {
+				font-size: 1.5em;
+			}
+
+			h2 {
+				font-size: 1.2em;
+			}
+
+			h3 {
+				font-size: 1em;
+			}
+
+		/* Header */
+
+				#header h1 {
+					font-size: 1.35em;
+				}
+
+		/* Main */
+
+			#main {
+				padding: 4em 1.5em;
+			}
+
+				#main > section {
+					margin: 2.25em 0 0 0;
+					padding: 2.25em 0 0 0;
+				}
+
+	}
