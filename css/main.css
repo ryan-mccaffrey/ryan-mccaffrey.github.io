@@ -692,6 +692,11 @@ ul {
 					#header h1 br {
 						display: inline;
 					}
+			.image.avatar img {
+			    float: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			/* Navigation bar */
 			#navigation {
@@ -725,7 +730,10 @@ ul {
 				display: none;
 			}
 
-			.image.center {
+			.col-md-12 {
+				width: 100%;
+			}
+			.image.center img {
 				width: 30%;
 			}
 
