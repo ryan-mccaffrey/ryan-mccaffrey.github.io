@@ -310,10 +310,7 @@ left: 50px;
 	cursor: pointer;
 	cursor: hand;
 }
-.icon span {
-	text-decoration: none;
-	border-bottom: none;
-}
+
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -321,6 +318,12 @@ left: 50px;
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
+	text-decoration: none;
+}
+
+.icon:hover, .icon:active, .icon:visited, .icon:link {
+	text-decoration: none;
+	border-bottom: none;
 }
 
 .icon > .label {
