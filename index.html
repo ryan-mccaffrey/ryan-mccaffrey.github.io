@@ -1,24 +1,22 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-
-		<!-- Things to look into: Image preloading, copyToClipboard: check if browser supports functionality (otherwise just do a mailto), switch background with every refresh?, GOOGLE ANALYTICS, check that meyerweb blog for cross browser compatibility (edit the css tidbit up top), moving header background image into css file -->
-
-		<!-- Greta’s comments:
-		Mailto instead of copy email on mobile
-
-		Website fixes:
-		Fix google analytics, use chrome extension to see what is going wrong with it
-		The auto highlighting on the toolbar does NOT work in deployment
-		Issue on favicon when opening documents
-		Create an email with website name domain -->
-		<title>Ryan McCaffrey - Web Portfolio</title>
-		<meta charset="utf-8">
-		<meta name="description" content="Ryan McCaffrey&#39;s Portfolio Website">
-		<meta name="keywords" content="RyanMcCaffrey,Ryan McCaffrey,ryan,Ryan,mccaffrey,McCaffrey,personal,computer science, princeton university">
-		<meta name="author" content="Ryan McCaffrey">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- 
+    	Website TODOs:
+    	Google analytics
+    	Issue on favicon when opening documents
+     	-->
+		<title>I'm Ryan McCaffrey!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<meta name="description" content="na" />
+		<meta property="og:site_name" content="I'm Ryan McCaffrey!" />
+		<meta property="og:title" content="I'm Ryan McCaffrey!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="na" />
+		<link href="https://fonts.googleapis.com/css?family=Public+Sans:300,300italic,700,700italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 
 		<!-- ****** Favicons ****** -->
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -41,259 +39,36 @@
 		<meta name="msapplication-TileColor" content="#FFFFFF">
 		<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
 		<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-
-		<!-- Open Graph Protocol -->
-		<meta property="og:title" content="Ryan McCaffrey - Portfolio Website">
-		<meta property="og:type" content="website">
-		<meta property="og:image" content="https://ryan-mccaffrey.github.io/images/profile-pic-small.png">
-		<meta property="og:description" content="Personal website to describe my various coding projects and research experiments.">
-
-		<!-- CSS -->
-		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/main.css">
-
-		<!-- Scripts -->
-		<script src="js/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-		<script src="js/tether.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-        <!-- Baffle disabled until I can speed up website -->
-		<!-- <script src="js/baffle.min.js"></script> -->
-
 	</head>
-	<body>
-		<!-- Header -->
-			<header id="header" style="background-image: url('images/polygon3_2.jpg');">
-
-				<span class="image avatar"><img src="images/propic-small.jpg" alt="ryan-mccaffrey-avatar" /></span>
-				<h1><strong>Ryan McCaffrey</strong></h1>
-				<h1>B.S.E. Computer Science</h1>
-				<h1>Princeton University</h1>
-				<h1>Class of 2019</h1>
-				
-				<br /><br />
-				<!-- preload bg image --><!-- <img style="display:none;" src="images/bg.jpg"> -->
-			</header>
-
-		<!-- Footer -->
-			<footer id="footer">
-
-				<!-- Social media icon list -->
-				<nav>
-				<ul class="icons">
-					<li><a href="https://github.com/ryan-mccaffrey" class="icon fa fa-github-square github" target="_blank"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/ryanmccaffrey42" class="icon fa fa-linkedin-square linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-					<li><a id="fa-email" data-toggle="popover" data-trigger="manual" data-content="Copied email to clipboard!" data-placement="top" data-delay='{"show":0, "hide":2000}' onclick="copyToClipboard('#fa-email')" meta="ryan.mccaffrey.42@gmail.com" class="icon fa fa-envelope-square"><span class="label">Email</span></a></li>
-					<li><a id="resume" href="files/RyanMcCaffrey_Resume.pdf" class="icon fa fa-file-text" target="_blank"><span class="label">Resume</span></a></li>
-					<li id="spotify-icon" style="display:none;"><a id="spotify" href="https://open.spotify.com/user/1268312476" class="icon fa fa-spotify spotify"><span class="label">Spotify</span></a></li>
-				</ul>
-				</nav>
-			</footer>
-
-		<!-- Main -->
+	<body class="is-loading">
+		<div id="wrapper">
 			<div id="main">
-
-				<!-- Navigation bar -->
-				<section id="navigation">
-					<nav class="navbar navbar-default navbar-fixed-top">
-						<div class="container-fluid">
-					    	<ul class="nav navbar-nav navbar-center" id="top-menu">
-					      		<li><a class="scrolldown" href="#projects">Projects</a></li>
-					      		<li><a class="scrolldown" href="#research">Research</a></li>
-					    	</ul>
-					  	</div>
-					</nav>
-				</section>
-
-				<!-- About Me -->
-				<section id="about">
-					<noscript>For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript>
-					<h1>Ryan McCaffrey</h1>
-					<p>Student, software developer, sushi enthusiast.</p>
-				</section>
-
-				<!-- Projects -->
-				<section id="projects">
-					<h2>My Projects</h2>
-					
-					<div class="container-fluid row">
-						<article class="col-md-4">
-							<a href="#pumac-app" class="image fit thumb scrolldown"><img class="basic-border" src="images/pumac_logo.png" alt="PUMaC - Ryan McCaffrey" /></a>
-							<h3><a href="#pumac-app" class="scrolldown">PUMaC Web Application</a></h3>
-							<p>Django application for the Princeton math competition</p>
-						</article>
-
-						<article class="col-md-4">
-							<a href="#dwn2-ios-app" class="image fit thumb scrolldown"><img class="basic-border" src="images/placeit-dwn2.png" alt="dwn2 iOS App - Ryan McCaffrey" /></a>
-							<h3><a href="#dwn2-ios-app" class="scrolldown">dwn2</a></h3>
-							<p>iOS app built at HackPrinceton (Nov. 2015)</p>
-						</article>
-
-						<article class="col-md-4">
-							<a href="#mhs-point-tracker" class="image fit thumb scrolldown"><img class="basic-border" src="images/placeit-MHS-thumb.jpg" alt="Math Honor Society point tracker - Ryan McCaffrey" /></a>
-							<h3><a href="#mhs-point-tracker" class="scrolldown">Math Honor Society point tracker</a></h3>
-							<p>Java program for high school's Math Honor Society</p>
-						</article>
-					</div>
-				</section>
-
-				<!-- Project details -->
-
-					<section id="pumac-app" class="project-details">
-
-						<div class="project-header">
-							<h1>PUMaC Web Application</h1>
-							<img class="helper-logo" id="pumac-logo" src="images/pumac.png" title="PUMaC logo" alt="PUMaC logo">
+				<div class="inner">
+					<div id="container01" class="container default">
+						<div class="wrapper">
+							<div class="inner">
+								<div id="image01" class="image">
+									<span class="frame"><img src="images/propic.jpg" alt="big cheesin" /></span>
+								</div>
+								<h1 id="text03">@ryanmccaffrey</h1>
+							</div>
 						</div>
-						<p>The Princeton University Mathematics Competition (PUMaC) is an annual international high schoool math competition.</p>
-
-						<ul class="detail-list">
-							<li>Built a web application that supports registration for teams and proctors, score input, computation of competition winners</li>
-							<li>Includes support for “live round” component of competition, where question correctness checks and team score updates are performed real-time</li>
-							<li>Ongoing project with small team. Currently serving as tech team leader</li>
-							<li>Technologies include Django framework, MySQL database</li>
-							<li>Check our progress <a href="https://pumac.princeton.edu/" target="_blank">here!</a></li>
-						</ul>
-
-						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
-					</section>
-					<!-- dwn2 -->
-					<section id="dwn2-ios-app" class="project-details">
-
-						<h1>dwn2</h1>
-						<p>dwn2 is an iOS application that allows users to create events and invite friends for spontaneous meet-ups.</p>
-
-						<ul class="detail-list">
-                            <li>Implements a push notification system that only remains active when friends confirm their invite to the event; a declined invite or lack of response after a short period (user defined) mute notifications</li>
-                            <li>Includes product website (currently unsearchable)</li>
-                            <li>Team project, developed app from scratch; gained experience as a full-stack programmer</li>
-                            <li>Improved abilities in using Bootstrap framework, HTML, CSS, Swift, and Xcode</li>
-                            <li>Utilized Microsoft Azure database and Facebook API for secure login</li> 
-                        </ul>
-
-                        <div class="container-fluid row">
-                        	<div class="col-md-12">
-                        		<span class="image center"><img src="images/placeit-dwn2.png" alt="dwn2 iPhone display - Ryan McCaffrey"></span>
-                        	</div>
-                        </div>
-
-                        <p>See more <a href="https://github.com/dwn2">on GitHub</a>.</p>
-                        <br />
-						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
-					</section>
-
-
-					<!-- MHS Point Tracker -->
-					<section id="mhs-point-tracker" class="project-details">
-
-						<h1>Math Honor Society point tracker</h1>
-						<p>The Math Honor Society point tracker is a Java program that efficiently documents and tracks points earned by members in my high school’s Math Honor Society (MHS).</p>
-
-						<ul class="detail-list">
-                            <li>Features password protection and user customization</li>
-                            <li>Implements automated emailing and exporting data to spreadsheet functions</li>
-                            <li>Gained proficiency in NetBeans IDE, Java Swing</li>
-                        </ul>
-
-                        <div class="container-fluid">
-                        	<div class="row">
-                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS1.png" alt="MHS point tracker, screenshot 1 - Ryan McCaffrey"></span></div>
-                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS2.png" alt="MHS point tracker, screenshot 2 - Ryan McCaffrey"></span></div>
-                        	</div>
-                        	<div class="row">
-                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS3.png" alt="MHS point tracker, screenshot 3 - Ryan McCaffrey"></span></div>
-                        		<div class="col-md-6"><span class="image fit"><img src="images/MHS-SS4.png" alt="MHS point tracker, screenshot 4 - Ryan McCaffrey"></span></div>
-                        	</div>
-                        </div>
-
-                        <p>See more <a href="https://github.com/ryan-mccaffrey/MHS_PointTracker">on GitHub</a>.</p>
-                        <br />
-						<p style="text-align: right;"><a href="#projects" class="scrollup">Back to Projects <i class="fa fa-arrow-up"></i></a></p>
-					</section>
-
-
-
-				<!-- Research -->
-				<section id="research">
-					<h2>My Research</h2>
-
-					<div class="container-fluid row">
-						<article class="col-md-4">
-							<a href="#dex-differentiation" class="image fit thumb scrolldown"><img class="basic-border" src="images/dexamethasone_cells-thumb.png" alt="Cells with dexamethasone - Ryan McCaffrey" /></a>
-							<h3><a href="#dex-differentiation" class="scrolldown">Dexamethasone drug delivery system</a></h3>
-							<p>Materials science research conducted at Stony Brook University.</p>
-						</article>
-
-						<article class="col-md-4">
-							<a href="#segmentation-research" class="image fit thumb scrolldown"><img class="basic-border" src="images/sceneSegmentation-thumb.png" alt="Kinect segmentation image - Ryan McCaffrey" /></a>
-							<h3><a href="#segmentation-research" class="scrolldown">Indoor scene segmentation</a></h3>
-							<p>Computer vision research conducted at New York University.</p>
-						</article>
 					</div>
-				</section>
-
-
-
-				<!-- Research details -->
-
-					<!-- Dex Proj -->
-					<section id="dex-differentiation" class="project-details">
-
-						<h1>"Creation of a Drug Delivery System for Dexamethasone Differentiation of Dental Pulp Stem Cells"</h1>
-						<p>Worked under distinguished materials engineering researcher Miriam Rafailovich to develop a drug delivery mechanism composed of a 3-dimensional printed surface and dexamethasone to differentiate dental pulp stem cells.</p>
-
-                        <div class="container-fluid">
-                        	<div class="row">
-                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_1.png" alt="MHS point tracker, screenshot 1 - Ryan McCaffrey"></span></div>
-                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_2.png" alt="MHS point tracker, screenshot 2 - Ryan McCaffrey"></span></div>
-                        	</div>
-                        	<div class="row">
-                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_3.png" alt="MHS point tracker, screenshot 3 - Ryan McCaffrey"></span></div>
-                        		<div class="col-md-6"><span class="image fit"><img src="images/dex-image_4.png" alt="MHS point tracker, screenshot 4 - Ryan McCaffrey"></span></div>
-                        	</div>
-                        </div>
-
-                        <p><a href="files/DrugDeliveryMechanism_Abstract.pdf" target="_blank">View abstract</a> to read more about the project.</p>
-                        <br />
-						<p style="text-align: right;"><a href="#research" class="scrollup">Back to Research <i class="fa fa-arrow-up"></i></a></p>
-					</section>
-
-					<!-- Kinect segmentation proj -->
-					<section id="segmentation-research" class="project-details">
-
-						<h1>"The Construction of a 3-Dimensionally Segmented Dataset of Indoor Scenes Using the Microsoft Kinect"</h1>
-						<p>Researched under Professor Robert Fergus to develop an algorithm that segments images of indoor scenes into its components using support relationships between objects in image.</p>
-
-                        <span class="image fit"><img src="images/segmentation-image_1.png" alt="Kinect segmentation image - Ryan McCaffrey"></span>
-
-                        <p><a href="files/IndoorSegmentation_Abstract.pdf" target="_blank">View abstract</a> to read more about the project.</p>
-                        <br />
-						<p style="text-align: right;"><a href="#research" class="scrollup">Back to Research <i class="fa fa-arrow-up"></i></a></p>
-					</section>
+					<hr id="divider02" class="style1 full">
+					<ul id="buttons01" class="buttons">
+						<li>
+							<a href="https://www.instagram.com/theryanmccaffrey/" class="button n01"><svg><use xlink:href="images/icons.svg#instagram"></use></svg><span class="label">Instagram</span></a>
+						</li><li>
+							<a href="https://www.linkedin.com/in/ryanmccaffrey42/" class="button n02"><svg><use xlink:href="images/icons.svg#linkedin"></use></svg><span class="label">Linkedin</span></a>
+						</li><li>
+							<a href="https://github.com/ryan-mccaffrey" class="button n03"><svg><use xlink:href="images/icons.svg#github"></use></svg><span class="label">github</span></a>
+						</li>
+					</ul>
+					<hr id="divider01" class="style1 full">
+					<p id="text02">Want to get in contact? Send me an <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%72%79%61%6e%2e%6d%63%63%61%66%66%72%65%79%2e%34%32%40%67%6d%61%69%6c%2e%63%6f%6d">email</a>.</p>
+				</div>
 			</div>
-
-
-		<!-- Scripts -->
-		<script src="js/functions.js"></script>
-		<script>
-		$(document).ready(function(){
-		    $('[data-toggle="popover"]').popover(); 
-		});
-		</script>
-
-		<!-- Google analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-83204185-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>
-
+		</div>
+		<script src="js/main.js"></script>
 	</body>
 </html>
