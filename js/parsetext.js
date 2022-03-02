@@ -1,27 +1,26 @@
 // Given a text, removes the timestamps from the text and returns it.
 // Timestamps are assumed to occur in either [0-9]+:[0-9]+ OR [0-9]+:[0-9]+:[0-9]+ format.
 function removeTimestamps(input) {
-    if (input.value.trim() === "") {
+    if (input.trim() === "") {
         return input
     }
 
     // Remove all numbers from the script.
     let res = input;
-    const shortRegex = /[0-9]+:[0-9]+\n/g;
-    const longRegex  = /[0-9]+:[0-9]+:[0-9]+\n/g;
+    const shortRegex = /[0-9]+:[0-9]+/g;
+    const longRegex  = /[0-9]+:[0-9]+:[0-9]+/g;
 
     // We have to search for the long timestamps first because otherwise we will remove
     // a portion of them by searching for the short timestamps.
     res = res.replaceAll(longRegex, '');
     res = res.replaceAll(shortRegex, '');
 
-    // Remove extra newlines and replace them with a space.
-    res = res.replaceAll(/\n+/g, ' ');
+    // Remove extra newlines and spaces, and replace them with a space.
+    res = res.replace(/\n+/g, ' ');
+    res = res.replace(/  +/g, ' ');
 
     return res
 }
-
-crypto.randomUUID()
 
 function download(filename, text) {
     var pom = document.createElement('a');
@@ -50,7 +49,6 @@ const form = document.getElementById('textparser');
 
 form.addEventListener('submit', (event) => {
     let filename = 'parsed_'+createPseudoUUID()+'.txt'
-
-    let parsedText = removeTimestamps(form.elements["note-box"]);
+    let parsedText = removeTimestamps(form.elements['note-box'].value);
     download(filename, parsedText);
 });
